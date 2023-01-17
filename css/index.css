@@ -3,44 +3,97 @@
     vertical-align: top;
 }
 
-.logo{
-    width: 23%;
-    padding: 1%;
-    text-align: center;
+
+
+
+
+.navigation{
+    margin-left: 10%;
+    margin-right: 10%;
+
+    
 }
-
-ul{
-    width: 50%;
-    margin-left: auto;
-}
-
-
 nav{
-    width: 73%;
-    padding: 1%;
+    width: 49%;
+    text-align: right;
+    
+}
+
+header ul{
+    padding: 10px;
+    margin: 0;
+}
+
+#logo{
+    width: 49%;
 }
 
 .heroImg{
     height: 600px;
     padding: 25px;
+    text-align: center;
+}
+
+
+#aboutMe{
+
 }
 
 .content{
-    width: 500px;
+    max-width: 500px;
     margin: 0 auto;
+
 }
 
 footer{
 background-color: #ffe3cd;
+text-align: right;
 }
 
 footer ul{
     display: inline-block;
     vertical-align: top;
+    margin-left: 10%;
+    margin-right: 12%;
+
 }
 
 li{
     padding: 2px;
 }
 
+/* My Skills Section */
+.mySkills{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
 
+h1{
+    display: inline-block;
+
+}
+
+.flexContainer{
+    display: flex;
+margin-bottom: 50px;
+}
+
+.flexItem{
+    width: 33%;
+
+}
+
+.myWork{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.gridImgage{
+   grid-column-start: 1; 
+   grid-column-end: 1; 
+}
