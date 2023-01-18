@@ -29,15 +29,15 @@ header ul{
 }
 
 .heroImg{
-    height: 600px;
+    height: 500px;
     padding: 25px;
     text-align: center;
 }
 
 
-#aboutMe{
+/* #aboutMe{
 
-}
+} */
 
 .content{
     max-width: 500px;
@@ -69,14 +69,15 @@ li{
     text-align: center;
 }
 
-h1{
+/* h1{
     display: inline-block;
 
-}
+} */
 
 .flexContainer{
     display: flex;
 margin-bottom: 50px;
+
 }
 
 .flexItem{
@@ -88,12 +89,68 @@ margin-bottom: 50px;
     margin-left: 10%;
     margin-right: 10%;
     text-align: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 100px);
+    margin-bottom: 50px;
 }
 
-.gridImgage{
-   grid-column-start: 1; 
-   grid-column-end: 1; 
+.workGrid{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px;
+    grid-gap: 20px;
+    /* border: green solid; */
 }
+
+#projectImg1{
+   background-image: url(/HW-18/imgs/Postcard\ thumb.png) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+    /* border: red solid; */
+
+}
+#projectImg2{
+    background-image: url(/HW-18/imgs/besties\ thumb.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     /* border: red solid; */
+ 
+ }
+ #projectImg3{
+    background-image: url(/HW-18/imgs/PCAU\ thumb.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+     /* border: red solid; */
+ 
+ }
+
+ @media only screen and (max-width:600px){
+    
+.workGrid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 100px 200px 100px 200px 100px;
+}
+
+#gridText1{
+    grid-row-start: 2;
+}
+
+#gridText2{
+    grid-row-start: 4;
+}
+
+.flexContainer{
+flex-direction: column;
+justify-content: center;
+}
+
+.flexItem{
+    width: 100%;
+
+}
+
+ }
